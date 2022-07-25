@@ -1,0 +1,21 @@
+.navbar {
+          /* overflow: hidden; */
+          background-color: #dfd5e7;
+         position: fixed;  
+          width: 100%;  
+        }
+
+        .search{
+          border-radius: 50px;
+        }
+        .btn{
+          margin-Right: 50px;
+          border-radius: 50px;
+
+        }
+
+        .title a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+        
