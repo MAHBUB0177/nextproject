@@ -1,10 +1,14 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Layout from './layout'
+import Meta from '../Component/Meta'
  const about = () => {
   return (
 
           <div className={styles.container}>
+            <Meta title='About' keyword='next,react' description=''/>
+    
+               
      
       <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

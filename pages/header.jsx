@@ -9,7 +9,7 @@ import styles from '../styles/Header.module.css'
 export const Header = () => {
   return (
     <div>
-          <Navbar className={styles.navbar}>
+         <Navbar bg="light" expand="lg">
       <Container fluid>
         <Navbar.Brand href="/">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,10 +19,11 @@ export const Header = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-           
+            
 
-          <Link href='/about' style={{textDecoration:'none'}}>
-                          <li class='active'><a style={{paddingRight:'20px',fontSize:'20px',color:'gray',paddingTop:'15px',cursor:'pointer',paddingTop:'30px'}} >About</a></li>
+
+            <Link href='/about' style={{textDecoration:'none'}}>
+                          <li className='active'><a style={{paddingRight:'20px',fontSize:'20px',color:'gray',paddingTop:'15px',cursor:'pointer',paddingTop:'30px'}} >About</a></li>
                           </Link>
 
                           <Link href='/contact' style={{textDecoration:'none'}}>
@@ -35,7 +36,9 @@ export const Header = () => {
                           
                           </Link>
 
-            <NavDropdown title="Page" id="navbarScrollingDropdown" >
+
+
+            <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
                 Another action
@@ -45,16 +48,18 @@ export const Header = () => {
                 Something else here
               </NavDropdown.Item>
             </NavDropdown>
-            
+            <Nav.Link href="#" disabled>
+              Link
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
-              className="me-2 search"
+              className="me-2"
               aria-label="Search"
             />
-            <Button style={{background:'green'}} className="btn">Search</Button>
+            <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
